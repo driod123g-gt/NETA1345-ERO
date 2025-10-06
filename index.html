@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website about computer programming">
+    <meta name="author" content="Emmanuel Ramirez">
+    <title> My Portfolio - Emmanuel Ramirez </title>
+</head>
+<body>
+    <h2> About Me </h2>
+    <h3> About Me </h3>
+    <h4> About Me </h4>
+    <h5> About Me </h5>
+    <p>I am currently taking a course in programming.</p>
+    <h2> My Classes</h2>
+    <ol><li><i>ITEC 1330</i></li>
+        <li><em>ITEC 1335</em></li>
+        <li><mark>ITEC 1340</mark></li>
+        <li><b>ITEC 1345</b></li>
+        <li><sub>ITEC 1330-02</sub></li>
+    </ol>
+<form action="/submit" method="POST">
+    <label> Username:
+        <input type="text"
+        name="Username">
+    </label>
+    <p></p>
+    <label>Password:
+        <input type="Password"
+        name="password">
+    </label>
+</form>
+
+<fieldset>
+    <legend>Preferred Contact Method:</legend>
+    <label>
+        <input type="radio" name="contact" value="email">Email
+    </label>
+    <label>
+        <input type="radio" name="contact" value="phone">Phone
+    </label>
+    <label>
+        <input type="radio" name="contact" value="fax">Fax
+    </label>
+    <label>
+        <input type="radio" name="contact" value="text">Text
+    </label>
+</fieldset>
+<p></p>
+<fieldset>
+    <legend>Preferred Contact Method:</legend>
+    <label>
+        <input type="checkbox" name="contact" value="email">Email
+    </label>
+    <label>
+        <input type="checkbox" name="contact" value="phone">Phone
+    </label>
+    <label>
+        <input type="checkbox" name="contact" value="fax">Fax
+    </label>
+    <label>
+        <input type="checkbox" name="contact" value="text">Text
+    </label>
+</fieldset>
+<br>
+<label for="country">
+    Country:
+</label>
+<select id="country" name="country">
+    <option value="">Choose a country...</option>
+    <option value="us">United States</option>
+    <option value="ca">Canada</option>
+    <option value="uk">United Kingdom</option>
+</select>
+<p></p>
+<label for="message">
+    Message:
+</label>
+<textarea id="message"
+name="message" rows="10" cols="50">
+</textarea>
+<p></p>
+<form action="/upload-image" method="POST"
+enctype="multipart/form-data">
+<fieldset>
+    <legend>Upload Profile Picture</legend>
+    <label>
+        Profile Picture:
+        <input type="file"  name="profile_picture"
+        accept="imaege/jpeg,image/png,image/gif"required>
+    </label>
+        <small>Max file size: 5MB. Accepted formats: JPG, PNG, GIF</small>
+</fieldset>
+<p></p>
+</form>
+<p></p>
+<button type="submit"
+formaction="/login">
+    Log In
+</button>
+
+<button type="submit"
+formaction="/register">
+    Register
+</button>
+<p></p>
+<label>
+    Name:
+    <input type="text" placeholder="Enter you Name" 
+    required maxlength="50">
+</label>
+<p></p>
+<label>
+    
+</label>
+<p></p>
+<label>
+    Postal Code:
+    <input type="text"
+    pattern="[A-Za-z][0-9][A-Za-z]">
+</label>
+</body>
+</html>
