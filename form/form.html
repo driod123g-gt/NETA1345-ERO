@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WELCOME TO MONKEY ROYALE</title>
+    <link rel="icon" type="image/logo-icon" href="Images/logo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website about computer programming">
+    <meta name="author" content="Emmanuel Ramirez">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<center>
+<body bgcolor="lightgreen">
+<h1><font color="brown"> WELCOME TO MONKEY ROYALE!!!</font></h1>
+<img src="Images/monkey-74.gif" alt="Monkey running away with banana" 
+width="700" height="400">
+<nav>
+    <a href="form2.html"><font color="navy">Learn More About the event HERE!</font></a></p>
+</nav>
+        <table border="3" cellpadding="20" bgcolor="lightgreen" width="95%">
+            <tr>
+                <td>
+                    <p>We are inviting you to a cosplay-dodgball birthday event!
+    This is the celebration of a fellow monkey's birthday. So grab a bunch of
+    bananas, put on your best monkey impression, and make sure to not get hit
+    by a coconut. Snacks are not required but are more than welcome; Food and hydrating beverages will
+    be supplied. Face protection is on you...so we hope you can dodge >;)</p>
+                </td>
+            </tr>
+        </table>
+<form action="/register" method="POST" enctype="multipart/form-data">
+    <br>
+    <br>
+<label>First Name:
+        <input type="text" placeholder="Enter your first name" 
+        name="userName" required>
+    </label>
+    <p></p>
+    <label>Last Name:
+            <input type="text" placeholder="Enter your last name" maxlength="50" 
+            name="lastName" required>
+    </label>
+    <p></p>
+    <label>Email:
+            <input type="text" placeholder="mail@example.com" maxlength="50" name="email">
+    </label>
+    <p></p>
+    <label>Phone Number
+        <input type="tel" placeholder="000-000-0000" maxlength="16" name="phone" required>
+    </label>
+    <br>
+<table width="15%">
+    <tbody>
+        <tr>
+        <td>
+       <fieldset>
+       <legend>Preferred Contact Method:</legend>
+       <label>
+           <input type="radio" name="contact" value="email">
+           Email
+       </label>
+       <label>
+           <input type="radio" name="contact" value="phone" required>
+           Phone
+       </label>
+        </fieldset>
+        </tr>
+    </td>
+    </tbody>
+</table>
+<p><font color="crimson"> Please cast your vote on which dodgeball game you would prefer.
+Game order and rounds will be determined by popularity of vote.
+<label for=“game”> 
+</label><br>
+<select id="game" name="game"> 
+<option value="">Choose your dodgeball...</option> 
+<option value="drdball">Dr. Dodgeball</option> 
+<option value="bbdball">Backboard Dodgeball</option> 
+<option value="ohdball">Opposite Hand Dodgeball</option> 
+<option value="ffadball">Free-for-all Dodgeball</option>
+</select>
+</font></p>
+    <table width="60%">
+        <tr>
+            <td>
+    <p><font color="green">Please upload a picture of your face so we can enter it into an
+        interactive leaderboard for your teams.</font>
+        <fieldset action="/upload-image" method="POST"
+    enctype="multipart/form-data">
+        <legend align="left"> Upload Profile Picture</legend>
+        <label>
+        Profile Picture
+        <input type="file" name="profile_picture"
+        accept="image/jpeg,image/png,image/gif">
+        </label>
+        <small> Max file size: 5MB. Accepted formats: JPG,
+        PNG, GIF</small>
+        </fieldset>
+            </td>
+        </tr>
+    </table>
+    </p><br>
+    <p><font color="DarkGoldenRod">What kind of food would you like? 
+        It does not have to be just one.</font></p>
+    <table>
+        <tbody>
+            <tr>
+            <td>
+                <fieldset>
+                    <legend>Choose food:</legend>
+                    <label>
+                        <input type="checkbox" name="food" value="burger">
+                        Burger
+                    </label>
+                    <label>
+                        <input type="checkbox" name="food" value="wings">
+                        Wings
+                    </label>
+                    <label>
+                        <input type="checkbox" name="food" value="pizza">
+                        Pizza
+                    </label>
+                    <label>
+                        <input type="checkbox" name="food" value="hotdog">
+                        Hot Dog
+                    </label>
+                </fieldset>
+            </tr>
+            </td>
+        </tbody>
+    </table>
+<button type="submit">Submit</button>
+<button type="reset">Clear Form</button>
+<br>
+<br>
+</form>
+</body>
+</center>
+</html>
